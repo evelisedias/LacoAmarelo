@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço Amarelo</title>
+    <link rel="stylesheet" href="css/profissionais.css">
+</head>
+<body>
+<header>
+    <h1>Laço Amarelo - Portal de Saúde Mental</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="noticia.html">Notícias</a></li>
+            <li><a href="autoajuda.html">Autoajuda</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="equilibrio">
+        <h2>Encontre Seu Equilíbrio</h2>
+        <p>Cuidar da mente é um ato de coragem.
+            <br>Não enfrente tudo sozinho. A terapia pode ser o caminho para o bem-estar.</p>
+        <h4>Nesta sessão você poderá procurar pelo profissional mais próximo, conforme sua necessidade.</h4>
+        <form id="searchForm">
+            <select id="atendimento">
+                <option disabled selected>Escolha o tipo de atendimento</option>
+                <option value="gratuito">Gratuito</option>
+                <option value="particular">Particular</option>
+            </select>
+            <select id="cidade">
+                <option disabled selected>Escolha a cidade</option>
+                <option value="esteio">Esteio</option>
+                <option value="canoas">Canoas</option>
+                <option value="sapucaia-do-sul">Sapucaia do Sul</option>
+                <option value="porto-alegre">Porto Alegre</option>
+            </select>
+            <select id="profissional">
+                <option disabled selected>Escolha o tipo de profissional</option>
+                <option value="psicologo">Psicólogo</option>
+                <option value="psiquiatra">Psiquiatra</option>
+            </select>
+            <button type="button" onclick="searchProfessionals()">Buscar</button>
+        </form>
+        <div id="results"></div>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 Laço Amarelo - Portal de Saúde Mental. Todos os direitos reservados.</p>
+</footer>
+<script src="js/profissionais.js"></script>
+</body>
+</html>

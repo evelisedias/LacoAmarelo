@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5em;
+}
+
+header {
+    background-color: #b0083a;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+.dicas {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.post {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-radius: 2%;
+}
+
+.post_img {
+    width: 50%;
+    margin-left: 5em;
+    display: block;
+    border-radius: 5px; /* Opcional: Adiciona borda arredondada às imagens */
+}
+
+.post h2 {
+    color: #b0083a;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    text-align: center;
+}
+
+.paragrafo{
+    text-align: justify;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+.pergunta{
+    color: #b0083a;
+}
+
+/* Tabela */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff; /* Cor de fundo da tabela */
+    border: 1px solid #ddd; /* Borda da tabela */
+    padding: 2em;
+}
+
+table th, table td {
+    border: 1px solid #b0083a; /* Borda das células */
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
+    color: #333; /* Cor do texto do cabeçalho */
+    font-size: 14px;
+}
+
+table td {
+    color: #666; /* Cor do texto das células */
+    font-size: 12px;
+}
+
+.back-link {
+    background-color: #5f6570;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin: 15px;
+    font-size: 15px;
+
+}
+
+.back-link:hover {
+    background-color: #4e545d; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

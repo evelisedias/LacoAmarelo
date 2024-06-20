@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b0083a;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+
+section{
+    display: flex;
+    padding: 10px;
+    margin-left: 5em;
+    margin-top: 3em;
+
+}
+
+.app img {
+    align-content: center;
+    width: 50%;
+    margin-left:5em;
+    border-radius: 50%;
+}
+
+.app h2 a, .mindfulness h2 a, .sono h2 a {
+    color: #b0083a;
+    transition: background-color 0.3s ease;
+    width: 35%;
+}
+
+.app {
+    padding: 2em;
+    position: absolute;
+    border: solid #4e545d;
+    border-radius: 2%;
+    width: 20%;
+    margin-left: 2em;
+    margin-top: 2em;
+    background-color: #e6f7ff
+}
+
+.txt1, .txt2, .txt3 {
+    text-align: justify;
+}
+.mindfulness img{
+    align-content: center;
+    width:30%;
+    margin-left: 7em;
+    border-radius:100%;
+}
+
+.mindfulness {
+    padding: 2em;
+    position: absolute;
+    border: solid #4e545d;
+    border-radius: 2%;
+    width: 20%;
+    height:43%;
+    margin-left:30em;
+    margin-top: 2em;
+    background-color: #e6f7ff
+}
+.sono img {
+    align-content: center;
+    width: 30%;
+    margin-left: 7em;
+    border-radius: 50%;
+}
+.sono {
+    padding: 2em;
+    position: absolute;
+    border: solid #4e545d;
+    border-radius: 2%;
+    width: 20%;
+    height:43%;
+    margin-left:58em;
+    margin-top: 2em;
+    background-color: #e6f7ff
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

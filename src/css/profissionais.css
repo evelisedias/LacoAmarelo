@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5em;
+}
+
+header {
+    background-color: #b0083a;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Form styles */
+.equilibrio {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.equilibrio h2 {
+    color: #b60657;
+    margin-bottom: 1em;
+}
+
+.equilibrio form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equilibrio select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button{
+    background-color: #5f6570;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin: 15px;
+}
+button:hover{
+    background-color: #4e545d;
+    cursor: pointer;
+}
+
+/* Results */
+#results {
+    margin-top: 20px;
+}
+
+.professional {
+    background-color: #e6f7ff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.professional h3 {
+    margin: 0;
+    color: #b60657;
+}
+
+.professional p {
+    margin: 5px 0;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

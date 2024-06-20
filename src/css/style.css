@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b0083a;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.left-content {
+    width: 48%;
+}
+
+.welcome, .news {
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+.autoajuda-intro, .news {
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: justify;
+}
+
+.autoajuda-intro{
+    margin-bottom: 2cm;
+}
+
+.autoajuda-intro h2, .news h2 {
+    color: #b60657;
+    margin-bottom: 10px;
+}
+
+.autoajuda-intro p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.autoajuda-intro ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.autoajuda-intro ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.autoajuda-intro ul li strong {
+    color: #b60657;
+}
+
+.carousel-container {
+    width: 48%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 6cm;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 2%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption a {
+    color: white;
+    text-decoration: none;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
