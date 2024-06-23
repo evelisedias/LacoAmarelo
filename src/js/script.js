@@ -1,29 +1,30 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-item');
-const totalSlides = slides.length;
+document.addEventListener('DOMContentLoaded', (event) => {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-    });
-}
+    const showSlides = () => {
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex) ? 'block' : 'none';
+        });
+    };
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;  // Avança ao invés de retroceder
-    showSlide(currentSlide);
-}
+    const nextSlide = () => {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlides();
+    };
 
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    showSlide(currentSlide);
-}
+    const prevSlide = () => {
+        slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+        showSlides();
+    };
 
-// Auto slide
-setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    document.querySelector('.next').addEventListener('click', nextSlide);
+    document.querySelector('.prev').addEventListener('click', prevSlide);
 
-// Initial display
-showSlide(currentSlide);
+    // Exibição inicial
+    showSlides();
 
-// Add event listeners for the buttons
-document.querySelector('.prev').addEventListener('click', prevSlide);
-document.querySelector('.next').addEventListener('click', nextSlide);
+    // Passagem automática
+    setInterval(nextSlide, 3000);
+});

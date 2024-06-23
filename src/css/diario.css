@@ -16,10 +16,11 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 1em;
 }
 
@@ -34,6 +35,7 @@ nav ul li a {
     margin: 0 auto;
     padding: 20px;
 }
+
 .post {
     color: #333;
     font-size: 24px;
@@ -43,7 +45,7 @@ nav ul li a {
 
 .post_img {
     width: 50%;
-    margin-left: 5em;
+    margin: 0 auto;
     display: block;
     border-radius: 5px; /* Opcional: Adiciona borda arredondada às imagens */
 }
@@ -53,17 +55,20 @@ nav ul li a {
     transition: background-color 0.3s ease;
     width: 80%;
     text-align: center;
+    margin: 0 auto;
 }
 
-.paragrafo{
+.paragrafo {
     text-align: justify;
     padding: 10px;
     color: #333;
     font-size: 16px;
     margin-bottom: 15px;
     width: 80%;
+    margin: 0 auto;
 }
-.pergunta{
+
+.pergunta {
     color: #b0083a;
 }
 
@@ -71,10 +76,9 @@ nav ul li a {
 table {
     width: 80%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     background-color: #fff; /* Cor de fundo da tabela */
     border: 1px solid #ddd; /* Borda da tabela */
-    padding: 2em;
 }
 
 table th, table td {
@@ -104,13 +108,14 @@ table td {
     transition: background-color 0.3s ease;
     margin: 15px;
     font-size: 15px;
-
+    text-align: center;
 }
 
 .back-link:hover {
     background-color: #4e545d; /* Cor de fundo ao passar o mouse */
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -119,4 +124,106 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsividade para desktop */
+@media (max-width: 1200px) {
+    .dicas {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .post_img {
+        width: 70%;
+    }
+
+    .paragrafo, .post h2 {
+        width: 90%;
+    }
+}
+
+/* Responsividade para tablet */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .dicas {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .post_img {
+        width: 80%;
+    }
+
+    .paragrafo, .post h2 {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .back-link {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para celular */
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .dicas {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .post {
+        font-size: 18px;
+    }
+
+    .post_img {
+        width: 90%;
+    }
+
+    .paragrafo, .post h2 {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        padding: 5px;
+    }
+
+    table th, table td {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .back-link {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 5px 0;
+    }
 }

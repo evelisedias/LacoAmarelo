@@ -108,3 +108,37 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Responsividade para celular */
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .content {
+        padding: 1em;
+    }
+
+    .autoajuda-intro p {
+        font-size: 1em;
+    }
+
+    .autoajuda-intro ul li {
+        font-size: 1em;
+    }
+
+    button.prev, button.next {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}

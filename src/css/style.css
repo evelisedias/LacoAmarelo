@@ -51,7 +51,7 @@ nav ul li a {
     text-align: justify;
 }
 
-.autoajuda-intro{
+.autoajuda-intro {
     margin-bottom: 2cm;
 }
 
@@ -96,6 +96,7 @@ nav ul li a {
 .carousel-item {
     position: relative;
     min-width: 100%;
+    display: none; /* Esconder todas as slides inicialmente */
     box-sizing: border-box;
 }
 
@@ -107,10 +108,14 @@ nav ul li a {
     border-radius: 2%;
 }
 
+.carousel-item:first-child {
+    display: block; /* Exibir a primeira slide */
+}
+
 .carousel-caption {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 30px;
+    left: 30px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
@@ -154,4 +159,99 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsividade para tablet */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content, .carousel-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .carousel-container {
+        margin-top: 2cm;
+    }
+}
+
+/* Responsividade para celular */
+@media (max-width: 380px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .content {
+        padding: 1em;
+    }
+
+    .autoajuda-intro p {
+        font-size: 1em;
+    }
+
+    .autoajuda-intro ul li {
+        font-size: 1em;
+    }
+
+    button.prev, button.next {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+
+/* Responsividade para full-screen */
+@media (min-width: 1200px) {
+    .content {
+        padding: 3em;
+    }
+
+    .left-content, .carousel-container {
+        width: 60%;
+    }
+
+    .carousel-container {
+        margin-top: 2cm;
+    }
+
+    button.prev {
+        left: 40em;
+        margin-top: 7em;
+    }
+
+    button.next {
+        right: 60px;
+        margin-top: 7em;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 2%;
+        margin-left: 2em;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 40px;
+        left: 70px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
 }

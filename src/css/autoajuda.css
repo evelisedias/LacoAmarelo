@@ -15,10 +15,11 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 1em;
 }
 
@@ -28,79 +29,41 @@ nav ul li a {
 }
 
 /* Main */
-
-section{
+section {
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
-    margin-left: 5em;
-    margin-top: 3em;
-
+    margin: 3em 5em;
+    justify-content: space-around;
 }
 
-.app img {
-    align-content: center;
+.app, .mindfulness, .sono {
+    padding: 2em;
+    border: solid #4e545d;
+    border-radius: 2%;
+    width: 30%;
+    margin: 1em;
+    background-color: #e6f7ff;
+    text-align: center;
+}
+
+.app img, .mindfulness img, .sono img {
     width: 50%;
-    margin-left:5em;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto 1em;
 }
 
 .app h2 a, .mindfulness h2 a, .sono h2 a {
     color: #b0083a;
     transition: background-color 0.3s ease;
-    width: 35%;
-}
-
-.app {
-    padding: 2em;
-    position: absolute;
-    border: solid #4e545d;
-    border-radius: 2%;
-    width: 20%;
-    margin-left: 2em;
-    margin-top: 2em;
-    background-color: #e6f7ff
 }
 
 .txt1, .txt2, .txt3 {
     text-align: justify;
 }
-.mindfulness img{
-    align-content: center;
-    width:30%;
-    margin-left: 7em;
-    border-radius:100%;
-}
 
-.mindfulness {
-    padding: 2em;
-    position: absolute;
-    border: solid #4e545d;
-    border-radius: 2%;
-    width: 20%;
-    height:43%;
-    margin-left:30em;
-    margin-top: 2em;
-    background-color: #e6f7ff
-}
-.sono img {
-    align-content: center;
-    width: 30%;
-    margin-left: 7em;
-    border-radius: 50%;
-}
-.sono {
-    padding: 2em;
-    position: absolute;
-    border: solid #4e545d;
-    border-radius: 2%;
-    width: 20%;
-    height:43%;
-    margin-left:58em;
-    margin-top: 2em;
-    background-color: #e6f7ff
-}
-
-
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -109,4 +72,74 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsividade para notebook */
+@media (max-width: 1200px) {
+    section {
+        margin: 2em 3em;
+    }
+
+    .app, .mindfulness, .sono {
+        width: 45%;
+        margin: 1em auto;
+    }
+}
+
+/* Responsividade para tablet */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    section {
+        margin: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app, .mindfulness, .sono {
+        width: 80%;
+        margin: 1em 0;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+}
+
+/* Responsividade para celular */
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    section {
+        margin: 1em;
+    }
+
+    .app, .mindfulness, .sono {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .app img, .mindfulness img, .sono img {
+        width: 70%;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 5px 0;
+    }
 }
