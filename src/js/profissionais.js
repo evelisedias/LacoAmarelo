@@ -286,15 +286,15 @@ document.addEventListener("DOMContentLoaded", function (){
         const modalidade = document.getElementById("modalidade").value;
         const resultsDiv = document.getElementById("results");
 
-        // Filtrar os profissionais com base nos critérios selecionados
+        // Filtra o profissional
         const filteredProfessionals = professionals.filter(pro => {
             return pro.atendimento === atendimento && pro.cidade === cidade && pro.tipo === profissional && pro.modalidade === modalidade;
         });
 
-        // Limpar o conteúdo anterior antes de exibir os novos resultados
+        // Limpar tela anterior
         resultsDiv.innerHTML = "";
 
-        // Verificar se foram encontrados profissionais que correspondem aos critérios
+        // Avalia se encontrou profissionais com as opções selecionadas
         if (filteredProfessionals.length > 0) {
             filteredProfessionals.forEach(pro => {
                 const proDiv = document.createElement("div");

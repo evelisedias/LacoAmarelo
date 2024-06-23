@@ -140,7 +140,7 @@ button.prev, button.next {
 }
 
 button.prev {
-    left: 10px;
+    left: 5em;
 }
 
 button.next {
@@ -179,7 +179,10 @@ footer {
 }
 
 /* Responsividade para celular */
-@media (max-width: 380px) {
+@media (max-width: 480px) {
+    body{
+        margin-bottom: 8em;
+    }
     header {
         padding: 0.5em 0;
     }
@@ -192,6 +195,16 @@ footer {
 
     .content {
         padding: 1em;
+        flex-direction: column;
+    }
+
+    .carousel-caption{
+        margin-right: 2em;
+    }
+
+    .left-content, .carousel-container {
+        width: 100%;
+        margin: 0;
     }
 
     .autoajuda-intro p {
@@ -202,15 +215,14 @@ footer {
         font-size: 1em;
     }
 
+    }
     button.prev, button.next {
-        padding: 5px;
-        font-size: 16px;
+        display: none;
     }
 
     footer {
         font-size: 0.8em;
     }
-}
 
 
 /* Responsividade para full-screen */
@@ -236,6 +248,7 @@ footer {
         right: 60px;
         margin-top: 7em;
     }
+
     .carousel-item img {
         width: 100%;
         height: auto;
